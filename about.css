@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Finlandica");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Lucida Sans Regular";
+}
+body {
+  background-color: #1d2026;
+  color: #fff;
+  font-family:'Finlandica';
+  width: 100%;
+  min-height: 100vh;
+}
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to left, #81c2e0, #151516);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav {
+    position: fixed;
+    z-index: 999;
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: linear-gradient(to top, #81c2e0, #151516);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+.triangles {
+    transform: translate(-50%, -50%);
+    height: 81px;
+    width: 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+  
+.loader_bg {
+    position: fixed;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+  
+.tri {
+    position: absolute;
+    animation: pulse_51 750ms ease-in infinite;
+    border-top: 27px solid #215A6D;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0px;
+}
+  
+.tri.invert {
+    border-top: 0px;
+    border-bottom: 27px solid #215A6D;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+  
+.tri:nth-child(1) {
+    left: 30px;
+}
+
+.tri:nth-child(2) {
+    left: 15px;
+    top: 27px;
+    animation-delay: -125ms;
+}
+  
+.tri:nth-child(3) {
+    left: 30px;
+    top: 27px;
+}
+  
+.tri:nth-child(4) {
+    left: 45px;
+    top: 27px;
+    animation-delay: -625ms;
+}
+  
+.tri:nth-child(5) {
+    top: 54px;
+    animation-delay: -250ms;
+}
+  
+.tri:nth-child(6) {
+    top: 54px;
+    left: 15px;
+    animation-delay: -250ms;
+}
+  
+.tri:nth-child(7) {
+    top: 54px;
+    left: 30px;
+    animation-delay: -375ms;
+}
+  
+.tri:nth-child(8) {
+    top: 54px;
+    left: 45px;
+    animation-delay: -500ms;
+}
+  
+.tri:nth-child(9) {
+    top: 54px;
+    left: 60px;
+    animation-delay: -500ms;
+}
+  
+@keyframes pulse_51 {
+    0% {
+      opacity: 1;
+    }
+  
+    16.666% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+}
+
+.row .left {
+    overflow: hidden;
+}
+
+.row .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .right {
+    display: flex;
+    align-items: center;
+}
+
+.row .right .content {
+    padding-left: 20px;
+}
+
+.row .right .content h2 {
+    padding-bottom: 15px;
+    line-height: 26px;
+}
+
+.row .right .content p {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+    .row .right .content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
