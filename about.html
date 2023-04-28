@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group 2 l About Us</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.mins.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="loader_bg">
+        <div class="triangles">
+            <div class="tri invert"></div>
+            <div class="tri invert"></div>
+            <div class="tri"></div>
+            <div class="tri invert"></div>
+            <div class="tri invert"></div>
+            <div class="tri"></div>
+            <div class="tri invert"></div>
+            <div class="tri"></div>
+            <div class="tri invert"></div>
+        </div>
+    </div>
+    
+    <nav>
+        <a href="index.html" class="logo">Group 2</a>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About Us</a></li>
+            <li><a href="tagline.html">Video</a></li>
+            <li><a href="https://fakerzen.github.io/group2-portfolio/">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <div class="center">
+        <div class="row">
+            <div class="left">
+                <img data-aos="fade-right" data-aos-delay="2700" data-aos-duration="1500" src="image/Logo.png" alt="">
+            </div>
+
+            <div class="right">
+                <div class="content">
+                    <h2 data-aos="fade-up" data-aos-delay="2800" data-aos-duration="1500">R. O. M. E means Revolution. Oblige. Movement. Equality.</h2>
+                    <p data-aos="fade-up" data-aos-delay="2900" data-aos-duration="1500">Hi! We are Group 2 of B10-09-S2-1.</p>
+                    <p data-aos="fade-up" data-aos-delay="3000" data-aos-duration="1500">Our brand represents the freedom to express of people by the use of clothing. In our generation
+                        today, we use different types of clothes to express our feelings, sexuality, mood, style, and
+                        personality. Not only it expresses our self, it can also help us feel more confident everyday!
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="3000" data-aos-duration="1500">The reason why we chose Rome as our brand name is because it is known as the "Eternal City" where
+                        in for our brand, we give you a never ending love and luck.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+		AOS.init();
+
+        AOS.init({
+			once: true
+		})
+	</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $(".loader_bg").fadeToggle();
+        }, 2500);
+    </script>
+</body>
+</html>

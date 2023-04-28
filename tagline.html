@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 2 l Video</title>
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.mins.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.mins.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="loader_bg">
+        <div class="triangles">
+            <div class="tri invert"></div>
+            <div class="tri invert"></div>
+            <div class="tri"></div>
+            <div class="tri invert"></div>
+            <div class="tri invert"></div>
+            <div class="tri"></div>
+            <div class="tri invert"></div>
+            <div class="tri"></div>
+            <div class="tri invert"></div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">Group 2</a>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a class="active" href="tagline.html">Video</a></li>
+            <li><a href="https://fakerzen.github.io/group2-portfolio/">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <div class="text">
+            <h2 data-aos="fade-right" data-aos-delay="2700" data-aos-duration="1500"><u>"Eternal Love & Luck"</u></h2>
+            <p data-aos="fade-right" data-aos-delay="2800" data-aos-duration="1500">Our Mission is to give the best-value products and services to global customers by innovating, leading,
+                and improving. </p>
+        </div>
+        <div class="center2" data-aos="fade-left" data-aos-delay="2800" data-aos-duration="1500">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image/1.png"></div>
+                        <div class="swiper-slide"><img src="image/2.png"></div>
+                        <div class="swiper-slide"><img src="image/3.png"></div>
+                        <div class="swiper-slide"><img src="image/5.png"></div>
+                        <div class="swiper-slide"><img src="image/4.png"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parent-div">
+        <div class="container2">
+            <center>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="760" height="415" src="https://www.youtube.com/embed/f6HnbWRHpYU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </center>
+        </div>
+
+        <div class="context">
+            <p>The best is what R.O.M.E desires for their clients. Our objective is to provide people the tools they need to feel more confident 
+                in their personal style choices. Therefore, we made the decision to collect everyone's responses to our question about their preferred style into a single outfit 
+                concept.
+            </p>
+        </div>
+    </div>
+
+        <script>
+            AOS.init();
+    
+            AOS.init({
+                once: true
+            })
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        setTimeout(function () {
+            $(".loader_bg").fadeToggle();
+        }, 2500);
+    </script>
+</body>
+
+</html>

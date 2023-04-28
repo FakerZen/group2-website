@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Group 2 l Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.mins.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+  <div class="loader_bg">
+    <div class="triangles">
+      <div class="tri invert"></div>
+      <div class="tri invert"></div>
+      <div class="tri"></div>
+      <div class="tri invert"></div>
+      <div class="tri invert"></div>
+      <div class="tri"></div>
+      <div class="tri invert"></div>
+      <div class="tri"></div>
+      <div class="tri invert"></div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="logo">Group 2</a>
+    <input type="checkbox" id="click" />
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="tagline.html">Video</a></li>
+      <li><a href="https://fakerzen.github.io/group2-portfolio/">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="row">
+      <div class="col">
+        <section class="introvideo" id="introvideo">
+          <div class="center">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/E64W6n_R_qc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section>
+         <h2 data-aos="fade-left" data-aos-delay="2700" data-aos-duration="1500" class="title">Get to Know Our Brand</h2>
+        <div class="faq" data-aos="fade-left" data-aos-delay="2800" data-aos-duration="1500">
+          <div class="question">
+            <h3>What is R.O.M.E?</h3>
+
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+            </svg>
+
+          </div>
+          <div class="answer">
+            <p>R.O.M.E is a clothing brand that sells unisex clothes to promote EQUALITY.</p>
+          </div>
+        </div>
+
+        <div class="faq" data-aos="fade-left" data-aos-delay="2900" data-aos-duration="1500">
+          <div class="question">
+            <h3>What is your goal?</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="answer">
+            <p>Our goal is to help those people be more confident with their own choice of clothing while still being
+              comfortable.</p>
+          </div>
+        </div>
+
+        <div class="faq" data-aos="fade-left" data-aos-delay="3000" data-aos-duration="1500">
+          <div class="question">
+            <h3>How are you unique from other clothing stores?</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="answer">
+            <p>We have clothes for all including those from the LGBTQ+. Also, we provide products for all body types.
+              We also listen to our customers' opinions about our brand so we can improve our brand in better ways.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq" data-aos="fade-left" data-aos-delay="3000" data-aos-duration="1600">
+          <div class="question">
+            <h3>Is your brand expensive?</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+            </svg>
+
+          </div>
+          <div class="answer">
+            <p>No, we try and make our products affordable so some less fortunate people can still buy from our store
+              if they want. Although our brand is affordable, we tend to make sure that our products have a great
+              quality for our buyers.</p>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        AOS.init();
+      </script>
+
+      <script src="./script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+        setTimeout(function () {
+          $(".loader_bg").fadeToggle();
+        }, 2500);
+      </script>
+</body>
+</html>
